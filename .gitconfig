@@ -1,0 +1,20 @@
+[core]
+	editor = vim
+[alias]
+	st = status
+	ci = commit
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	graph = log --graph
+	lg = log --name-status
+[user]
+	name = Greg Vorobyev
+	email = email@gmail.com
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
+[credential]
+	helper = osxkeychain
+[pull]
+	rebase = true
