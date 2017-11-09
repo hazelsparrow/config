@@ -1,0 +1,57 @@
+'.source.js':
+
+  'React Component':
+    'prefix': 'rc'
+    'body': """
+    import React from 'react';
+    import {observer} from 'mobx-react';
+
+    const $1 = observer(({$2}) => {
+      return (
+        $3
+      );
+    });
+
+    export default $1;
+    """
+
+  'MobX model':
+    'prefix': 'mm'
+    'body': """
+    import {DomainObject} from 'shared/store';
+    import {observable} from 'mobx';
+
+    class $1 extends DomainObject {
+      @observable id;
+      $2
+    }
+
+    export default $1;
+    """
+
+  'Smart div':
+    'prefix': 'di'
+    'body': '<div className=\'$1\'>$2</div>'
+
+  'React Component (inline)':
+    'prefix': 'rf'
+    'body': """
+    const $1 = observer(({$2}) => {
+      return (
+        $3
+      );
+    });
+    """
+
+  'Formatted Message':
+    'prefix': 'fm'
+    'body': '<FormattedMessage id=$1'
+
+  'Import Formatted Message':
+    'prefix': 'ifm',
+    'body': 'import {FormattedMessage} from \'react-intl\';'
+
+'.source.json':
+  'Translation':
+    'prefix': 'tr'
+    'body': '"$1": "$1",'
