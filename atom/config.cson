@@ -1,0 +1,40 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#483eee"
+      paintCursor: true
+    ui: {}
+  "autocomplete-python":
+    useKite: false
+  core:
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "language-javascript-jsx"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    fontSize: 17
+  "exception-reporting":
+    userId: "53139178-b726-46b9-bac1-7b6059673039"
+  fonts:
+    fontFamily: "Liberation Mono"
+  "linter-ui-default": {}
+  pigments:
+    autocompleteScopes: [
+      ".source.css"
+      ".source.css.less"
+      ".source.sass"
+      ".source.css.scss"
+      ".source.stylus"
+      ".source.scss"
+    ]
+    markerType: "gutter"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
